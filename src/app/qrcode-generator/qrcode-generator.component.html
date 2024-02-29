@@ -1,0 +1,41 @@
+<div class="container-fluid">
+    <h5 class="h5 text-center text-decoration-underline">Collect Your Product QRCode</h5>
+    <div class="row">
+        
+        <div class="col d-flex justify-content-center align-item-center">
+            <qrcode
+[allowEmptyString]="true"
+[alt]="'Product code'"
+[ariaLabel]="'QR Code image with the following content...'"
+[cssClass]="'center'"
+[colorDark]="'#000000ff'"
+[colorLight]="'#ffffffff'"
+[elementType]="'url'"
+[errorCorrectionLevel]="'M'"
+[margin]="4"
+[scale]="1"
+[title]="'Stock Code'"
+[width]="400"
+></qrcode>
+        </div>
+    </div>
+    <div class="row text-center mt-5">
+        <div class="col d-flex justify-content-center">
+            <div class="typewriter">
+                <div class="slide"><i></i></div>
+                <div class="paper"></div>
+                <div class="keyboard"></div>
+            </div>
+            <span class="mt-3 ms-4 h4">Sticker is getting placed in the Product</span>
+        </div>
+    </div>
+    <div class="row aadjkaw">
+        <div class="col d-flex justify-content-center">
+            <button class="button">
+                <span class="button-content" routerLink="/dashboard">Check Status</span>
+              </button>
+              
+        </div>
+    </div>
+
+</div>
