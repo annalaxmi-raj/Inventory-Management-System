@@ -16,8 +16,16 @@
 [scale]="1"
 [title]="'Stock Code'"
 [width]="400"
+[qrdata]="qrdata"
+(qrCodeURL)="onChange($event)"
 ></qrcode>
+
         </div>
+        <div class="text-center">
+            <input type="text" [(ngModel)]="qrdata" />
+            <br>
+            <a [href]="qrCodeDownloadLink" class="text-center mt-2">Download</a>
+            </div>
     </div>
     <div class="row text-center mt-5">
         <div class="col d-flex justify-content-center">

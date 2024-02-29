@@ -14,6 +14,8 @@ import { MychartComponent } from './mychart/mychart.component';
 import { Statistics2Component } from './statistics-2/statistics-2.component';
 import { QrcodeGeneratorComponent } from './qrcode-generator/qrcode-generator.component';
 import { QRCodeModule } from 'angularx-qrcode';
+import { FormsModule ,ReactiveFormsModule} from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +28,7 @@ import { QRCodeModule } from 'angularx-qrcode';
     Statistics2Component,
     QrcodeGeneratorComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, AngularFireModule.initializeApp({
+  imports: [BrowserModule,FormsModule, AppRoutingModule, AngularFireModule.initializeApp({
   apiKey: "AIzaSyAy0SG-Q8l5sA4lhfuiVHBjc-8MF3D5fig",
   authDomain: "stock-it-up-1e6ab.firebaseapp.com",
   projectId: "stock-it-up-1e6ab",
